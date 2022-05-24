@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"/>
+
+    <EditText
+        android:id="@+id/code_partner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_background"
+        android:hint="Love code"
+        android:paddingLeft="15dp" />
+
+
+    <Button
+        android:id="@+id/btnCode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code_partner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:text="Connect to love"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/btnCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/pink" />
+    <LinearLayout
+        android:id="@+id/toGetCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        >
+        <TextView
+            android:id="@+id/text_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or get your code"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/btnGetCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="in here"
+            android:layout_below="@+id/text_code"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/pink"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toGetCode"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text=""
+        android:inputType="none"
+        android:textIsSelectable="true"
+/>
+</RelativeLayout>
